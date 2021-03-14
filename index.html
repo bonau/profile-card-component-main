@@ -14,16 +14,70 @@
   <style>
     body {
       background-color: hsl(185, 75%, 39%);
+      margin: 0;
+      padding: 0;
+      width: 100wh;
+      height: 100vh;
+      display: block;
     }
 
-    .profileCard {
+    .profileView
+    {
+      display: flex;
+      width: 100vw;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .profileCard
+    {
+      position: relative;
       font-family: 'Kumbh Sans', sans-serif;
       font-size: 18px;
       color: hsl(0, 0%, 59%);
       background-color: white;
       border: 0;
       border-radius: 15px;
-      padding: 2em;
+      width: 350px;
+      height: 375px;
+      display: block;
+      text-align: center;
+      background: url('images/bg-pattern-card.svg') white repeat-x;
+      padding-top: 84px;
+    }
+
+    .profileCard img
+    {
+      border: 5px solid white;
+      border-radius: 48px;
+    }
+
+    .profileCard .title
+    {
+    }
+
+    .profileCard .detail
+    {
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      border-top: 1px solid hsl(0, 0%, 59%);
+      margin-top: 2em;
+      padding-top: 2em;
+      padding-bottom: 2em;
+      font-size: 10px;
+      position: absolute;
+      bottom: 0;
+    }
+
+    .profileCard strong
+    {
+      display: block;
+      color: hsl(229, 23%, 23%);
+      font-size: 18px;
+      margin-bottom: 0.5em;
     }
 
     .attribution { font-size: 11px; text-align: center; }
@@ -31,26 +85,31 @@
   </style>
 </head>
 <body>
-  <div class="profileCard">
-    <div class="title">
-      <strong>Victor Crest</strong>
-      26<br />
-      London
-    </div>
+  <div class="profileView">
+    <div class="profileCard">
+      <img src="images/image-victor.jpg">
+      <div class="title">
+        <strong>Victor Crest</strong>
+        26<br />
+        London
+      </div>
 
-    <div class="column">
-      <strong>80K</strong>
-      Followers
-    </div>
+      <div class="detail">
+        <div class="column">
+          <strong>80K</strong>
+          Followers
+        </div>
 
-    <div class="column">
-      <strong>803K</strong>
-      Likes
-    </div>
+        <div class="column">
+          <strong>803K</strong>
+          Likes
+        </div>
 
-    <div class="column">
-      <strong>1.4K</strong>
-      Photos
+        <div class="column">
+          <strong>1.4K</strong>
+          Photos
+        </div>
+      </div>
     </div>
   </div>
   <div class="attribution">
