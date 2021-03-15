@@ -13,11 +13,17 @@
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     body {
+      width: 100vw;
+      height: 100vh;
       background-color: hsl(185, 75%, 39%);
+      background-image: url('images/bg-pattern-top.svg'), url('images/bg-pattern-bottom.svg');
+      background-repeat: no-repeat, no-repeat;
+      background-position-x: calc(0vw - 50vmax), calc(100vw - 50vmax);
+      background-position-y: -55vmax, calc(100vh - 45vmax);
+      background-size: 100vmax, 100vmax;
+      background-attachment: scroll;
       margin: 0;
       padding: 0;
-      width: 100wh;
-      height: 100vh;
       display: flexbox;
     }
 
